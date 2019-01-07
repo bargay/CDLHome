@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Monday, January 7, 2019 11:21:46 AM
+   Source : D:\2019Projects\Git\CDL\CDL\Umbraco\
+     Dest : D:\2019Projects\Git\CDL\CDL\App_Data\NuGetBackup\20190107-112146\Umbraco\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	D:\2019Projects\Git\CDL\CDL\Umbraco\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Monday, January 7, 2019 11:21:46 AM
+
