@@ -236,3 +236,4 @@ D:\2019_WebDev\CDLHome\CDL\CDL\bin\Umbraco.Web.UI.xml
 D:\2019_WebDev\CDLHome\CDL\CDL\bin\UmbracoExamine.xml
 D:\2019_WebDev\CDLHome\CDL\CDL\obj\Debug\CDL.dll
 D:\2019_WebDev\CDLHome\CDL\CDL\obj\Debug\CDL.pdb
+D:\2019_WebDev\CDLHome\CDL\CDL\obj\Debug\CDL.csprojResolveAssemblyReference.cache
