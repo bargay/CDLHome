@@ -1,0 +1,278 @@
+/* Font Style
+   Font-face
+   Font-size
+   Line-height
+==============================================================================*/
+
+/* Font Face
+============================================*/  
+@font-face {
+	font-family: 'latobold';
+	src: url('/assets/type/lato-bold-webfont.eot');
+	src: url('/assets/type/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/type/lato-bold-webfont.woff') format('woff'), url('/assets/type/lato-bold-webfont.ttf') format('truetype'), url('/assets/type/lato-bold-webfont.svg#latobold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'latolight';
+	src: url('/assets/type/lato-light-webfont.eot');
+	src: url('/assets/type/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/type/lato-light-webfont.woff') format('woff'), url('/assets/type/lato-light-webfont.ttf') format('truetype'), url('/assets/type/lato-light-webfont.svg#latolight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'latoregular';
+	src: url('/assets/type/lato-regular-webfont.eot');
+	src: url('/assets/type/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/type/lato-regular-webfont.woff') format('woff'), url('/assets/type/lato-regular-webfont.ttf') format('truetype'), url('/assets/type/lato-regular-webfont.svg#latoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Basic
+============================================*/
+body, p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+}
+
+h1 {
+	font-family: 'latoregular';
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: normal;
+	color: #2a2929;
+	text-transform: uppercase;
+	 
+}
+
+h2 {
+	font-family: 'latobold';
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #6e4e10;
+	text-transform: uppercase;
+	word-spacing: 2px;
+} 
+
+h3{
+	font-family: 'latobold';
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #6e4e10;
+	text-transform: uppercase; 
+}
+
+h4{ 
+	font-size: 16px;
+	line-height: 20px;
+}
+
+small{
+	font-size: 10px; 
+	line-height: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+p .small{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+sup{font-size: 7px}
+
+/* Main Slider
+=============================================*/
+.rsABlock {
+	font-size: 58px !important;
+	color: white;
+	line-height: 62px !important;
+	font-family: 'latoregular' !important;
+	letter-spacing: -0.03px;
+	word-spacing: 10px;
+	text-transform: uppercase; 
+}
+
+.jQueryTextShadow {
+	letter-spacing: -0.03px;
+} 
+ 
+/* Main Caption
+=============================================*/
+#main-caption {
+	color: #333333;
+	font-size: 15px;
+	line-height: 17px;
+}
+
+/* Horizontal Navigation
+=============================================*/
+.horizontal-nav-container li a{  
+	font-family: 'latoregular';
+	font-size: 16px;
+	line-height: 18px;
+	color: white;
+}
+
+/* Sale Line */
+.horizontal-nav-container .phone{ 
+	color: white;
+}
+
+.horizontal-nav-container .phone label{ 
+	font-family: 'latobold';
+	font-size:14px;
+	display: block;
+}
+
+.horizontal-nav-container .phone span{ 
+	font-family: 'latoregular';
+	font-size: 16px;
+}
+
+/* Bottom: Contact & Showflat
+============================================*/
+.bottom-contact{
+	color: white; 
+} 
+
+.showflat-address{
+	font-family: 'latoregular';
+	font-size: 20px;
+	line-height: 25px; 
+}
+
+.showflat-address a:visited{
+	color: #94dbff; 
+	border-bottom: 1px dotted #94dbff
+}
+
+.bottom-contact .hotline{
+	font-family: 'latoregular';
+	font-size: 24px;
+	line-height: 24px; 
+}
+
+.bottom-contact .hotline label{
+	font-family: 'latoregular';
+	font-size: 14px;
+	line-height: 16px; 
+}
+
+
+/* Tabs: Map 
+============================================*/ 
+.map-button-group a{ 
+	font-weight: bold;
+	color: #282828;  
+} 
+
+.map-content {
+	color: #313131;
+} 
+
+/* Tabs: Floorplan
+============================================*/ 
+#floorplan-tabs .ui-tabs-nav a{
+	font-size: 13px;
+	line-height: 15px;
+	color: black;
+	text-transform: uppercase;
+}
+
+#floorplan-tabs .ui-tabs-nav a span{
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'latobold';
+	color: #5d4820;
+	display: block;
+}
+
+#floorplan-tabs .ui-tabs-nav .ui-tabs-active a, 
+#floorplan-tabs .ui-tabs-nav .ui-tabs-active a span{
+	color: white;
+}
+
+#floorplan-tabs .ui-tabs-panel .legend h2{ 
+	font-family: 'latoregular';
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+	text-transform:none;
+}
+
+#floorplan-tabs .ui-tabs-panel .legend .copy{ 
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* Facilities
+===============================================*/
+.map-legend h2{
+	color: #2a2929;
+} 
+
+/*Tabs*/  
+#facilities-tabs .ui-tabs-nav a { 
+	font-family: 'latobold';
+	color: #5d4820;
+	display: block;
+	font-size: 13px;
+	line-height: 15px; 
+	text-transform: uppercase;
+}
+
+#facilities-tabs .ui-tabs-nav .ui-tabs-active a, 
+#facilities-tabs .ui-tabs-nav .ui-tabs-active a span{
+	color: white;
+}
+
+/* Footer
+============================================*/
+#footer {
+	font-size: 12px;
+	line-height: 15px;
+	color: #565455;
+}
+#footer a {
+	color: #94dbff;
+	border-bottom: 1px dotted #94dbff;
+}
+#footer a:hover {
+	border: 0;
+}
+
+
+/* Top Navigation
+=============================================*/ 
+#top-nav-bar .txt {
+	font-family: 'latolight';
+	text-transform: uppercase;
+	font-size: 24px;
+	color: black;
+}
+#top-nav-bar .pull-right a {
+	font-family: 'latoregular';
+	color: #6b3e0f;
+	font-size: 16px;
+}
+.menu-dropdown li.current a {
+	font-family: 'latobold' !important;
+}
+.menu-dropdown li a {
+	font-size: 15px !important;
+}
+
+
+/* 11 06 2013 */
+
+.table-special th {
+    color: #6E4E10;
+    font-family: 'latobold';
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+}

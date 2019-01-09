@@ -1,0 +1,397 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CDL Residential | City Developments Limited</title>
+    <meta name="description" content="Choose your dream home from CDL’s selection of Ultra Luxury, Luxury and Affordable Luxury properties. " />
+    <meta name="keywords" content="Apartments in Singapore, Luxury homes in Singapore,Condominiums in Singapore, Properties in Singapore, Living in Singapore, Apartments at convenient locations, CDL residences
+" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#e09612">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/cus_main.css">
+    <link rel="stylesheet" type="text/css" href="/css/chinese-font.css">
+    <script src="//wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/newjs/vendor/jquery-ui-1.12.0.custom.min.js"></script>
+    <script type="text/javascript" src="/assets/newjs/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/newjs/vendor/bootstrap-select.js"></script>
+    <script type="text/javascript" src="/assets/newjs/plugins.js"></script>
+    <!-- <script type="text/javascript" src="/assets/newjs/main.min.js"></script> -->
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/residential_assets/js/gatracking.js"></script>
+   
+    <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37269067-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- End of top-select-wrapper -->
+        <style>
+            .dropdown-menu li, .dropdown-menu li a {
+                white-space: normal;
+                float: left;
+                width: 100%;
+                height: auto;
+                word-wrap: break-word;
+            }
+        </style>
+        <header id="top">
+            <!-- Logo and language bar({ -->
+            <div id="top-logo">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="top-logo col-xs-8 col-sm-6">
+                            <div class="logo-wrapper">
+                                <a class="logo" href="/">
+                                    <picture>
+                                        <source srcset="/media/382800/logo-cdl-top.png" media="(min-width:768px)">
+                                        <img srcset="/media/658913/retina_mobile_residential.png" alt="">
+                                    </picture>
+                                </a>
+                                <div class="header">RESIDENTIAL</div>
+                            </div>
+                        </div>
+
+                        <!-- Language Selector for Tablets & Desktops -->
+                        <div class="top-lang-selector hidden-xs text-right col-xs-4 col-sm-6">
+                            <a href="/cn/">简体中文</a>
+                        </div>
+
+                        <!-- Language Selector for Phones -->
+                        <div class="top-lang-selector-mobile visible-xs text-right col-xs-4 col-sm-6">
+                            <select class="form-control" id="mbsellanguage">
+
+                                <option value="EN" selected disabled>English</option>
+                                <!-- <a href="/cn/">简体中文</a> -->
+                                <option value="/cn/">简体中文</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- }); -->
+            <!-- Menu({ -->
+            <nav id="nav-main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="text-right col-xs-12 col-sm-12">
+                            <ul class="clearfix">
+
+                                <li class='dropdown current'>
+                                    <a id="navMain" data-target="#" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy <span class="caret"></span></a><!-- goup -->
+
+                                    <ul class="dropdown-menu" aria-labelledby="navMain">
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/singapore-properties/">Singapore Properties</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/future-launches/" class="w-indent">Future Launches</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/land-for-enquiry/" class="w-indent">Land For Enquiry</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/latest-updates/" class="w-indent">Latest Updates</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/buyers-guide/" class="w-indent">Buyer's Guide</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href="/residential/buying-a-property/international-properties/">International Properties</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class=''>
+                                    <a href="/residential/leasing-a-property/residences-for-lease/">Lease</a>
+
+                                </li>
+
+                                <li class='no-arrow '>
+
+                                    <a href="/residential/find/find-properties/#tab-map-view">Find a Property</a>
+                                </li>
+                                <li>
+                                    <a class="lightbox-generic" data-iframe="true" p-name="CDL properties" data-src="/residential/buying-a-property/contacts-web-form?propertyName=CDL Properties_CDL Properties|6989">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- }); -->
+        </header>
+        <script>
+    $(document).ready(function () {
+        $('#mbsellanguage').change(function (e) {
+            window.location = $(this).val();
+        });
+    });
+        </script>
+        <!-- End of top-nav-bar -->
+        <!-- Rotator -->
+       @Html.Partial("Banner.cshtml")
+        <!-- End Rotator -->
+        <!-- End of main-slider -->
+        <!-- Rotator -->
+        <div id="main-caption">
+            <div class="main-caption-inside">
+            </div>
+        </div>
+        <!-- End of main-caption -->
+        <!-- End Rotator -->
+        <!-- End of main-caption -->
+        <style>
+            .title {
+                background-color: #0e47a1;
+                text-align: center;
+                vertical-align: middle;
+                color: #fff;
+                padding: 14px 0;
+                width: 100%;
+            }
+        </style>
+        @RenderBody()
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script>
+    $("input[name='propertyCategory']").change(function () {
+
+        if ($('#checkboxList input:checked').length == 0 || $('#checkboxList input:checked').length == 4) {
+            $(".property-item-wrapper").show();
+        }
+        else {
+
+            $("input[name='propertyCategory']:not(:checked)").each(function (i, v) {
+                $(".property-item-wrapper[data-propertyCategory='" + $(this).val() + "']").fadeOut();
+            })
+
+            $("input[name='propertyCategory']:checked").each(function (i, v) {
+                if (i == 0) {
+                    $(".property-item-wrapper[data-propertyCategory='" + $(this).val() + "']").show();
+                }
+                else {
+                    $(".property-item-wrapper[data-propertyCategory='" + $(this).val() + "']").fadeIn();
+                }
+
+            })
+        }
+    });
+        </script>
+        <script type="text/javascript">
+    $(document).ready(function () {
+        $('#modal-higlights').modal('show');
+        $('.nav-sticky-menu > li').eq(0).addClass('selected');
+        $('.draggable-img').css({ 'top': '0', 'left': '-630px' });
+    });
+        </script>
+        <script type="text/javascript">
+    // Popup window code
+    function newPopup(url) {
+        popupWindow = window.open(
+            url, 'popUpWindow', 'height=768,width=1024,left=0,top=0,resizable=0,scrollbars=0,toolbar=0,menubar=0,location=0,directories=0,status=0')
+    }
+    function newPopup2(url) {
+        popupWindow = window.open(
+            url, 'popUpWindow', 'height=600,width=800,left=0,top=0,resizable=0,scrollbars=0,toolbar=0,menubar=0,location=0,directories=0,status=0')
+    }
+    function newPopup3(url) {
+        popupWindow = window.open(
+            url, 'popUpWindow', 'height=650,width=1024,left=0,top=0,resizable=0,scrollbars=0,toolbar=0,menubar=0,location=0,directories=0,status=0')
+    }
+
+    // Overwrite popup for Safari browser
+    if (navigator.userAgent.search('Safari') >= 0 && navigator.userAgent.search('Chrome') < 0) {
+        function newPopup3(url) {
+            popupWindow = window.open(
+                url, 'popUpWindow', 'height=630,width=1024,left=0,top=0,resizable=0,scrollbars=0,toolbar=0,menubar=0,location=0,directories=0,status=0')
+        }
+    }
+
+        </script>
+        <style>
+            .new-tab-highlights .new-tab-highlights-click.active .i-new-tab-highlights::before {
+                height: 30px;
+                transform: rotate(180deg);
+            }
+        </style>
+        <script>
+    $($(".new-tab-highlights-click a").data('target')).on("shown.bs.modal", function () {
+        $(".new-tab-highlights-click").addClass('active')
+    });
+    $($(".new-tab-highlights-click a").data('target')).on("hidden.bs.modal", function () {
+        $(".new-tab-highlights-click").removeClass('active')
+    });
+        </script>
+        <!-- Footer -->
+        <!-- Contact footer-->
+        <!-- /Contact footer-->
+       @Html.Partial("Footer.cshtml")
+        <!-- End Footer -->
+        <!-- Switch Language Lightbox -->
+        <link href="/residential_assets/css/jquery.smartModal.css" rel="stylesheet" type="text/css" />
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.smartmodal-modal').css('display', 'none');
+                $('.smartmodal-overlay').css('display', 'none');
+            });
+        </script>
+        <script type="text/javascript">
+                function showLightbox() {
+                    $("body").append('<div class="smartmodal auto smartmodal-modal" id="SM-1" ><div class="modal-close"><a href="javascript:$.smartModal(\'hide\', \'SM-1\');" class="close"></a></div>' +
+	                '<div class="smartmodal-content txt-align-center">' +
+		                '<h2>Welcome to CDL Home</h2>' +
+		                '<p><br/><strong>You may choose to browse our website in these languages:</strong></p>' +
+		                '<p><br/><a class="link" href="/cn/">简体中文</a> &nbsp;|&nbsp; <a class="link" href="/id/">Bahasa Indonesia</a></p>' +
+		                '<p>Or</p>' +
+		                '<p><a class="link close" href="javascript:$.smartModal(\'hide\', \'SM-1\');">continue in English</a></p>' +
+		                '<hr/>' +
+		                '<p><strong>Note:</strong> You can change your language settings at any time by <br/>clicking the options at the top right of the page.</p>' +
+		                '<img src="/assets/images/lightbox-switch-lang.jpg" width="598" height="167" />' +
+	                '</div>');
+
+                    $.smartModal('show', 'SM-1');
+                    $('.smartmodal-modal').css('display', 'block', 'top', '72px', 'left', '611.5px');
+                    $('.smartmodal-overlay').css('display', 'block');
+                }
+        </script>
+        <script type="text/javascript">
+                function swithchLightBox1() {
+                    var geocoder;
+
+                    geocoder = new google.maps.Geocoder();
+
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+                    }
+                    //Get the latitude and the longitude;
+                    function successFunction(position) {
+                        var lat = position.coords.latitude;
+                        var lng = position.coords.longitude;
+                        codeLatLng(lat, lng)
+                    }
+
+                    function errorFunction() {
+                        //alert("Geocoder failed");
+                        console.log("Geocoder failed");
+                    }
+
+
+                    function codeLatLng(lat, lng) {
+
+                        var latlng = new google.maps.LatLng(lat, lng);
+                        geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+                            if (status == google.maps.GeocoderStatus.OK) {
+                                console.log(results)
+                                if (results[1]) {
+                                    //formatted address
+                                    //alert(results[0].formatted_address)
+
+                                    //find country
+                                    for (var i = 0; i < results[0].address_components.length; i++) {
+                                        for (var b = 0; b < results[0].address_components[i].types.length; b++) {
+                                            if (results[0].address_components[i].types[b] == "country") {
+                                                country = results[0].address_components[i];
+                                                break;
+                                            }
+
+                                        }
+                                    }
+                                    //country data
+                                    //alert(country.short_name + " " + country.long_name)
+                                    if (country.long_name == "Indonesia") {
+                                        //to enable switch language lightbox if it is first time
+                                    }
+                                    else {
+                                        //to enable switch language lightbox if language is not indonesia bahasa or any version of chinese
+                                    }
+
+                                    // Save checked culture status in a cookie
+                                } else {
+                                    //alert("No results found");
+                                    console.log("No results found in geolocation");
+                                }
+                            } else {
+                                //alert("Geocoder failed due to: " + status);
+                                console.log("Geocoder failed due to: " + status);
+                            }
+                        });
+                    }
+                }
+        </script>
+        <script type="text/javascript">
+                function swithchLightBox(country) {
+                    //country data
+                    if (country == "ID" || country == "CN") {
+                        //to enable switch language lightbox if it is first time
+                        //alert('will check whether first time');
+                    }
+                    else {
+                        //to enable switch language lightbox if language is not indonesia bahasa or any version of chinese
+                    }
+
+
+                    // Save checked culture status in a cookie
+                }
+        </script>
+        <style>
+            .column .span3 .img {
+                height: auto;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+	            $('#content .column').each(function(){
+		            var childCount = $('.column > div:not(.clear)').length;
+		            if (childCount == 3){
+			            $(this).children('div:not(.clear)').removeClass('span4').addClass('span3');
+			            $('.column > div:nth-child(3)').addClass('last');
+		            } else if (childCount == 4){
+			            $(this).children('div:not(.clear)').removeClass('span3').addClass('span4');
+			            $('.column > div:nth-child(4)').addClass('last');
+		            }
+	            });
+            });
+        </script>
+        <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+        </div>
+        </body>
+</html>
+
+

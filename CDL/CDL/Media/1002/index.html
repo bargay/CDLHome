@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>One Shenton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<style type="text/css">
+			ul {
+				padding-left: 54px;
+				list-style-type: none;
+				height: 235px !important;
+				width: 75% !important;
+				margin: 0 auto;
+			}
+			
+			ul li {
+				float: left;
+				padding-right: 24px;
+			}
+			
+			ul li a {
+				width:125px; 
+				height:125px;
+				display: block;
+			}
+			
+			#link1 {
+				background:url(images/4bedroom_3402_off.png); 
+			}
+			
+			#link1:hover {
+				background:url(images/4bedroom_3402_on.png); 
+			}
+			
+			#link2 {
+				background:url(images/4bedroom_4403_off.png); 
+			}
+			
+			#link2:hover {
+				background:url(images/4bedroom_4403_on.png); 
+			}
+			
+			#link3 {
+				background:url(images/sky_suite_off.png); 
+			}
+			
+			#link3:hover {
+				background:url(images/sky_suite_on.png); 
+			}
+			
+			#link4 {
+				background:url(images/sky_villa_off.png); 
+			}
+			
+			#link4:hover {
+				background:url(images/sky_villa_on.png); 
+			}
+			
+			#full-screen-background-image {
+			  z-index: -999;
+			  min-height: 100%;
+			  min-width: 100%;
+			  position: fixed;
+			  top: 0;
+			  left: 0;  
+			}
+			.coco_navi{
+				background-size: contain !important;
+			    position: relative;
+			    top: -38px;
+			
+			}
+			
+			@media (max-width: 500px){
+
+				.coco_container{
+					width: 100%!important;
+					height: 561px!important;	
+					background-size: contain!important;
+					top: 50px!important;
+					background-image:url(images/box_old.png)!important;
+				}
+
+				.coco_navi{
+					display: none;
+				}
+
+				ul {
+					padding-top: 150px!important;
+					padding-left: 45px!important;
+				}
+
+				ul li{
+					margin: 10px 10px!important;
+					padding: 0px!important;
+				}
+
+				ul li a {
+				background-size: contain !important;
+			    display: block;
+			    height: 80px;
+			    width: 80px;
+			}
+
+			.thumbnail{
+				width: 80px;
+				height: 80px;
+			}
+			#link1{
+				background:url(images/4bedroom_3402_on.png); 
+			}
+
+			#link2{
+				background:url(images/4bedroom_4403_on.png);			
+			}
+
+			#link3{
+				background:url(images/sky_suite_on.png); 
+			}
+
+			#link4{
+				background:url(images/sky_villa_on.png);			
+			}
+
+			}
+
+			@media (max-width: 700px){
+
+				.coco_container{
+					background-size: contain !important;
+				    height: auto !important;
+				    position: relative;
+				    top: -20px !important;
+				    width: 290px !important;
+				    background-image:url(images/box_old.png)!important;
+				}
+
+				.coco_navi{
+					display: none;
+				}
+
+				ul {
+					padding-top: 150px!important;
+					padding-left: 25px!important;
+				}
+
+				ul li{
+					margin: 10px 10px!important;
+					padding: 0px!important;
+				}
+
+				ul li a {
+				background-size: contain !important;
+			    display: block;
+			    height: 80px;
+			    width: 80px;
+			}
+
+			.thumbnail{
+				width: 80px;
+				height: 80px;
+			}
+
+			#link1{
+				background:url(images/4bedroom_3402_on.png); 
+			}
+
+			#link2{
+				background:url(images/4bedroom_4403_on.png);			
+			}
+
+			#link3{
+				background:url(images/sky_suite_on.png); 
+			}
+
+			#link4{
+				background:url(images/sky_villa_on.png);			}
+			
+
+			}
+			
+		</style>
+	</head>
+<body style="height:100%; margin:0px; padding-top:10%;">
+	
+	<img id="full-screen-background-image" src="images/bg.jpg">
+	
+	<div class ="coco_container" style="background:url(images/box.png) no-repeat; width:800px; height:321px; margin:38px auto;">
+		<ul style="height:125px; width:100%;padding-top: 150px;">
+			<li><a id="link1" href="34-02/index.html"><img class="thumbnail" src="images/4bedroom_3402_off.png" onmouseover="this.src='images/4bedroom_3402_on.png'" onmouseout="this.src='images/4bedroom_3402_off.png'"></a></li>
+			<li><a id="link2" href="44-03/index.html"><img class="thumbnail" src="images/4bedroom_4403_off.png" onmouseover="this.src='images/4bedroom_4403_on.png'" onmouseout="this.src='images/4bedroom_4403_off.png'"></a></li>
+			<li><a id="link3" href="sky-suite/index.html"><img class="thumbnail" src="images/sky_suite_off.png" onmouseover="this.src='images/sky_suite_on.png'" onmouseout="this.src='images/sky_suite_off.png'"></a></li>
+			<li><a id="link4" href="sky-villa/index.html"><img class="thumbnail" src="images/sky_villa_off.png" onmouseover="this.src='images/sky_villa_on.png'" onmouseout="this.src='images/sky_villa_off.png'"></a></li>
+		</ul>
+	</div>
+<div class ="coco_navi" style="background:url(images/coco_navi.png) no-repeat; width:800px; height:151px; margin:0 auto;">
+	</div>
+		
+</body>
+</html>
