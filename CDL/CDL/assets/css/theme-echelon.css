@@ -1,0 +1,811 @@
+/* THEME - PALETTE
+   Main color: #FCA935
+   Font: Palatino Linotype
+==============================================================================*/  
+/* Font Style
+   Font-face
+   Font-size
+   Line-height
+==============================================================================*/   
+/* Font Face
+============================================*/
+@font-face {
+    font-family: 'TeXGyreHerosCnRegular';
+    src: url('../type/texgyreheroscn-regular-webfont.eot');
+    src: url('../type/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/texgyreheroscn-regular-webfont.woff') format('woff'),
+         url('../type/texgyreheroscn-regular-webfont.ttf') format('truetype'),
+         url('../type/texgyreheroscn-regular-webfont.svg#TeXGyreHerosCnRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosCnBold';
+    src: url('../type/texgyreheroscn-bold-webfont.eot');
+    src: url('../type/texgyreheroscn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/texgyreheroscn-bold-webfont.woff') format('woff'),
+         url('../type/texgyreheroscn-bold-webfont.ttf') format('truetype'),
+         url('../type/texgyreheroscn-bold-webfont.svg#TeXGyreHerosCnBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+/*
+@font-face {
+    font-family: 'PalatinoLinotype';
+    src: url('../type/PalatinoLinotype-Roman.eot');
+    src: url('../type/PalatinoLinotype-Roman.eot?#iefix') format('embedded-opentype'),
+         url('../type/PalatinoLinotype-Roman.woff') format('woff'),
+         url('../type/PalatinoLinotype-Roman.ttf') format('truetype'),
+         url('../type/PalatinoLinotype-Roman.svg#PalatinoLinotype') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+/* Basic: H1-H5, Sup, Sub, Link, Button, Listing
+==============================================================================*/  
+body, p{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+}
+
+p{
+	margin: 0 0 8px 0; 
+}  
+
+h1{ 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #311e0f;
+	font-size: 48px; 
+	line-height: 65px;
+	font-weight: normal;
+}
+
+h2{ 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #313131;
+	font-size: 24px; 
+	line-height: 30px;
+	font-weight: normal;
+	padding: 0 0 5px 0;
+}
+
+h3{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #232323;
+	font-size: 24px;
+	line-height: 30px;
+}
+ 
+h4{ 
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 0 7px 0;
+}
+
+h5{
+	font-size: 16px;
+	line-height: 18px; 
+}
+
+sub, sup{
+	font-size: 10px;
+	line-height: 14px;
+}
+
+p.small{
+	font-size: 12px; 
+}
+
+
+a.link{ 
+	text-decoration: none; 
+	color: #0055cc; 
+	border-bottom: 1px dotted #0055cc;
+}  
+ 
+a.link:hover{
+	border: 0;
+}
+
+a.link:visited {
+	color: #2d3673;
+	border-color: #2d3673;
+}
+
+a.info-link label,
+a.info-link2 label{
+	color: #0055cc; 
+	border-bottom: 1px dotted #0055cc; 
+}
+
+a.link-video{
+	color: #888888;
+	display: inline-block;
+	padding: 5px 0 5px 30px;
+	background: url(../images/h2o/icon-video.png) no-repeat 0 center;
+}
+
+a.link-pano{
+	color: #888888;
+	display: inline-block;
+	padding: 5px 0 5px 30px;
+	background: url(../images/h2o/icon-view.png) no-repeat 0 center;
+}  
+
+a.link-enlarged{
+	color: #888888;
+	display: inline-block;
+	padding: 5px 0 5px 30px;
+	background: url(../images/icon-enlarged.png) no-repeat 0 center; 
+}
+ 
+a.link-share{
+	color: #0055cc;
+}
+
+/*
+a#back{  
+	font-size: 20px;
+	color: white;
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+} */
+
+/* Button */
+.select-filter, a.btn, .btn-icon a, a#back{
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 15px; 
+	color: white;
+}
+
+a.btn,
+a.btn:visited{ 
+	color: white;
+	text-shadow: 0px -1px #124C6A;
+}
+
+a.btn.primary,
+.btn-icon{  
+	border: 1px solid #a1adb3;
+	background: url(../images/h2o/btn-primary-bg.gif) repeat-x 0 0;
+}
+
+a.btn.primary:hover,
+.btn-icon:hover{ 
+	background: url(../images/h2o/btn-primary-hover-bg.gif) repeat-x 0 0;
+}
+ 
+a.btn.secondary{ 
+	border: 1px solid #b2b2b2;
+	background: url(../images/h2o/btn-secondary-bg.gif) repeat-x 0 0; 
+}
+
+a.btn.secondary:hover{ 
+	background: url(../images/h2o/btn-secondary-hover-bg.gif) repeat-x 0 0; 
+} 
+
+/* Button & Icon */ 
+.btn-icon .caret.map{  
+	background: url(../images/h2o/icon-btn-map.png) no-repeat center center;
+} 
+ 
+.btn-icon a{
+	text-shadow: 0px -1px #124C6A;
+} 
+
+.showflat-address{
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.showflat-address a{
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/* List */
+ul.listing li{
+	background: url(../images/h2o/bullet.gif) no-repeat 0 5px;
+}
+
+ul.listing li li{
+	background: url(../images/h2o/bullet-small.gif) no-repeat 0 6px;
+}
+
+ul.listing li li li{ 
+	background: url(../images/h2o/short-string.gif) no-repeat 0 8px;
+}
+
+.hotline{  
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+	font-size: 28px; 
+	line-height: 36px; 
+}  
+
+/* Top Bar: Select Profile
+============================================
+#select-profile-bar a{
+	border-bottom: 1px dotted #0055cc;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#select-profile-bar li.selected a{
+	border-color: white;
+	color: #313131;
+}*/
+
+/* Top Bar: Top Nav
+============================================
+#top-nav-bar{ 
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+}
+
+#top-nav-bar .txt{
+	font-size: 16px; 
+}
+
+#top-nav-bar .toggle-menu:hover,
+#top-nav-bar .toggle-menu.active{
+	background-color: #F5991A;
+	color: #252525; 
+}*/
+
+/* Rotator 
+============================================*/
+.rotator-image1 { 
+	background: #38393A url(../images/echelon/inside-header-img01.jpg) no-repeat center top; 
+}
+
+.rotator-image2 { 
+	background: #38393A url(../images/echelon/inside-header-img02.jpg) no-repeat center top;  
+}
+
+.rotator-image3 { 
+	background: #38393A url(../images/echelon/inside-header-img03.jpg) no-repeat center top;  
+}
+
+.rotator-image4 { 
+	background: #38393A url(../images/echelon/inside-header-img03.jpg) no-repeat center top;  
+}
+
+.tagline-body{
+	color: #000000;
+	font-size: 13px;
+}
+
+.tagline .plus{ 
+	color: white;
+	font-size:12px;
+}
+
+/* Vertical Navigation = All Same
+==============================================================================
+#navigation a{
+	border: 0;
+	color: white;
+	font-size: 15px; 
+	text-shadow: 1px 1px black;
+	letter-spacing: 1px;
+}*/ 
+
+/* Horizontal Navigation
+==============================================================================*/ 
+.horizontal-nav-container li a{
+	color: white;
+}
+ 
+.horizontal-nav-wrapper .nav { 
+	background: #311e0f; 
+	border-bottom: 4px solid #c98245;
+	border-top: 1px solid #5e4f44; 
+	height: 60px;
+}
+
+.horizontal-nav-container li a{ 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px; 
+	background: url(../images/echelon/hori-nav-sep.gif) no-repeat right center; 
+} 
+
+.horizontal-nav-container li.none a{ 
+	background: none;
+}
+
+.horizontal-nav-container li a:hover,
+.horizontal-nav-container .details li.selected a{
+	color: #c98245;
+}
+
+.horizontal-nav-container .details li.last{ 
+	background: #482d17; 
+	margin-left: 20px;
+	margin-left: 10px\9;	/* IE9 */
+}
+
+.horizontal-nav-container .details li.selected { 
+	background-image: url(../images/echelon/hor-navi-selected.png);
+	background-position: center bottom;
+	background-repeat: no-repeat; 
+}   
+
+/* Sale Line */
+.horizontal-nav-container .phone{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: white;
+}
+ 
+.horizontal-nav-container .phone span{
+	display: block;
+	font-size: 20px;
+	font-family: 'Arial Narrow', 'TeXGyreHerosCnRegular', Arial, Helvetica, sans-serif;
+}
+
+/* Horizontal Nav: 2 Line & Plus
+==============================================================================*/ 
+.horizontal-nav-container{
+	position: relative;
+}
+
+.horizontal-nav-container .details li.special a{ 
+	line-height: 18px;
+	text-align: center; 
+	margin-top: 13px;
+	height: auto;
+	margin-bottom: 11px;
+} 
+ 
+#plus{
+	position: absolute;
+	right: 0;
+	width: 90px; 
+	top: 5px; 
+	opacity: 0;
+	display: none;  
+	margin-top:-10px\9;
+	*margin-top: 5px;
+} 
+
+#go-top-btn{
+	display: inline-block;
+	text-indent: -9999px;
+	font-size: 0;
+	width: 18px;
+	height: 40px;
+	margin-left: 15px;
+	background: url(../images/echelon/icon-go-top.png) no-repeat center center;
+}
+
+/* Content 
+==============================================================================*/  
+#content { 
+	background: #fff url(../images/echelon/inside-page-bg.jpg) no-repeat center top; 
+}
+
+/* Multi-media
+============================================*/ 
+.multi-media .pagination li.current a{ 
+	background-position: -13px 0; 
+}
+
+.media-body small {
+	font-size: 9px;
+	line-height: 12px;}
+
+/* Drop List 
+============================================*/  
+.sbHolder a{ 
+	font-size: 14px;
+	color: #313131;
+} 
+
+/* Section Map 
+============================================*/ 
+.map-font{
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.map-font strong{
+	font-family: 'TeXGyreHerosCnBold'; 
+	font-weight: normal; 
+}  
+
+.map-content{ 
+	color: #646464;
+}
+
+.map-content h4{ 
+	color: #313131;
+}
+
+/* Tabs: Map 
+============================================*/ 
+.map-button-group a{ 
+	font-weight: bold;
+	color: #282828;  
+} 
+
+/* Bottom: Contact & Showflat
+============================================*/ 
+.contact-title{
+	background: #573b2a;
+} 
+
+.contact-body{
+	background: #2d211a;
+}
+
+.bottom-contact{
+	color: white; 
+} 
+
+.bottom-contact .phone{
+	background:#0D3C57;
+	padding: 10px;
+} 
+
+.bottom-contact a.link:visited,
+.bottom-contact a{
+	color:#2fb3f9; 
+	border-bottom: 1px dotted #2fb3f9;
+} 
+
+/* Lightbox
+============================================*/ 
+.lightbox-wrapper .type{ 
+	font-size: 24px; 
+	color: #313131;
+	line-height:28px;
+}
+
+.lightbox-wrapper h5{
+	font-weight: normal;
+	color: #313131;
+}
+
+.lightbox-wrapper  h4{
+	margin: 0 0 15px 0;
+}
+
+/* Form: input
+============================================*/ 
+input.text{
+    font-family: 'TeXGyreHerosCnRegular';
+	font-size: 16px;
+}
+
+/* Footer
+============================================*/ 
+#footer a {
+	font-size: 12px;
+	line-height: 16px; 
+	color: #0055cc; 
+	border-bottom: 1px dotted #0055cc;
+} 
+
+#footer a:hover {
+	border:0;
+}
+
+/* Tooltip Styles
+============================================*/  
+.tooltip-content {
+	color: #313131;
+} 
+
+/* Tabs 
+============================================*/
+.tab-wrapper{
+	padding: 30px 0 0 0;
+	background: #F1ECE6;
+} 
+
+.tab-menu {
+	background: #f3ece6;
+	margin: 0;
+	/*float: left;
+	padding: 0 25px 0;*/
+	position: relative;
+	width: 950px;
+	margin: 0 auto;}
+	
+.tab-border {
+	border-bottom: 1px solid #ccc;
+	position: absolute;
+	top: 29px;
+	width: 950px;
+	z-index: 8}
+
+.tab {
+	clear: both;
+	padding: 0 10px;
+	position: absolute;
+	width: 930px;
+	z-index: 10}
+	
+.tab li {
+	display: inline;
+	width: 97px;}
+
+.tab li a {
+	background: #e2e1df; 
+	border-top: 1px solid #bcbbb9;
+	border-bottom: 1px solid #bcbbb9;
+	border-left: 1px solid #bcbbb9; 
+	color: #000; 	
+	float:left; 
+	font-size: 14px;
+	padding: 10px 10px 10px;
+	margin: 8px 0 0 0;  
+	text-decoration: none;}
+	
+.tab li.active a {
+	background: transparent url(../images/bg-tab-facilities.png) top center repeat-x;
+	border-top: 1px solid #f3ece6;
+	border-left: 1px solid #bcbbb9;
+	border-bottom: 1px solid #f3ece6;
+	border-right: 1px solid #bcbbb9;
+	font-weight: bold;
+	padding: 19px 10px 9px;
+	margin: 0;}
+
+.tab li.last a{
+	border-right: 1px solid #bcbbb9;
+}
+	
+.tab-box {
+	clear: both; 
+	width: 980px;
+	padding: 50px 0 0 0;} 
+	
+
+/* Tabs: Facilities 
+============================================*/	
+.tab-facilities-menu {
+	background: #f3ece6;
+	margin: 0;
+	/*float: left;
+	padding: 0 25px 0;*/
+	position: relative;
+	width: 950px;
+	margin: 0 auto;} 
+
+.tab-facilities {
+	clear: both;
+	padding: 0 10px;
+	position: absolute;
+	width: 930px;
+	z-index: 10}
+	
+.tab-facilities li {
+	display: inline;
+	width: 97px;}
+
+.tab-facilities li a {
+	background: #e2e1df; 
+	border-top: 1px solid #bcbbb9;
+	border-bottom: 1px solid #bcbbb9;
+	border-left: 1px solid #bcbbb9; 
+	color: #000; 	
+	float:left; 
+	font-size: 14px;
+	padding: 10px 10px 10px;
+	margin: 8px 0 0 0;  
+	text-decoration: none;}
+	
+.tab-facilities li.active a {
+	background: transparent url(../images/bg-tab-facilities.png) top center repeat-x;
+	border-top: 1px solid #f3ece6;
+	border-left: 1px solid #bcbbb9;
+	border-bottom: 1px solid #f3ece6;
+	border-right: 1px solid #bcbbb9;
+	font-weight: bold;
+	padding: 19px 10px 9px;
+	margin: 0;}
+	
+.tab-facilities-box {
+	clear: both; 
+	width: 980px;
+	padding: 50px 0 0 0;}  
+
+/* Tabs: Content 
+============================================*/
+.tab-wrapper .map{
+	padding: 20px 0 0 0;
+}
+
+.tab-floorplan-wrapper .tab-box{ 
+	padding-top:70px; 
+}
+
+/* Tabs: Lightbox
+============================================*/
+.tab-lightbox-menu {
+	float: left;
+	margin: 0;
+	/*padding: 10px 25px 0;*/
+	padding: 0 25px 0;
+	position: relative;
+	/*width: 438px;*/ }
+	
+.lightbox-wrapper .tab-border {
+	border-bottom: 1px solid #ccc;
+	position: absolute;
+	/*top: 39px;*/
+	top: 29px;
+	left: 0;
+	/*width: 488px;*/
+	width: 488px;
+	z-index: 8}
+
+.tab-lightbox {
+	clear: both;
+	padding: 0 10px;
+	position: absolute;
+	width: 408px;
+	z-index: 10}
+	
+.tab-lightbox li {
+	display: inline;
+	width: 97px;}
+
+.tab-lightbox li a {
+	background: #e2e1df; 
+	border-top: 1px solid #bcbbb9;
+	border-bottom: 1px solid #bcbbb9;
+	border-left: 1px solid #bcbbb9; 
+	color: #000; 	
+	float:left; 
+	font-size: 14px;
+	padding: 10px 10px 10px;
+	margin: 8px 0 0 0;  
+	text-decoration: none;}
+
+.tab-lightbox li.last a{
+	border-right: 1px solid #bcbbb9;
+}	
+
+.tab-lightbox li.active a {
+	background: transparent url(../images/bg-tab-facilities.png) top center repeat-x;
+	border-top: 1px solid #f3ece6;
+	border-left: 1px solid #bcbbb9;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #bcbbb9;
+	font-weight: bold;
+	padding: 19px 10px 9px;
+	margin: 0;}
+	
+.tab-lightbox-box {
+	clear: both; 
+	/*width: 980px;*/
+	width:488px;}
+	
+.tab-lightbox-box div {padding: 80px 0 0 ;}  
+
+.lightbox-wrapper .seperator-up{ 
+	margin:10px 0; 
+}
+
+/* Type */
+.type.bg1 span{ 
+	background: #E6DEA0;
+}
+.type.bg2 span{ 
+	background: #EFCEC6;
+}
+.type.bg3 span{ 
+	background: #7EB5D0;
+}
+.type.bg4 span{ 
+	background: #A5C7C7;
+}
+.type.bg5 span{ 
+	background: #CDE2E2;
+}
+.type.bg6 span{ 
+	background: #6D9FA9;
+}
+.type.bg7 span{ 
+	background: #BBCCB9;
+}
+.type.bg8 span{ 
+	background: #CAC9C9;
+}
+
+.lightbox-wrapper .pull-right{
+	width: 488px;
+}
+ 
+/* Page: Visit Sales Gallery
+============================================*/
+.section-sales{
+	padding: 10px 0;
+	position: relative;
+}
+
+/* Map: Side bar
+============================================*/
+.map-side-bar{
+	position: absolute;
+	z-index: 10;
+	left: 75px;
+	top: 30px;
+	width: 230px;
+	background: #2a2426;
+	padding: 6px;
+	z-index: 100;
+	color: white;
+}
+.map-side-bar-inside{
+	background: #4d4d4d;
+	padding: 10px 20px 20px 20px;
+}
+
+.map-side-bar-bottom{
+	padding: 10px 20px 20px 20px;
+}
+
+.map-side-bar a.link{
+	color: #2fb3f9;
+	border-color: #2fb3f9;
+}
+
+/* ImageMap: Floor Plan Small
+==============================================================================*/ 
+#floorplan-small {
+	width: 308px;
+	height:246px;
+	background: url(../images/echelon/floorplan-map-small.jpg);
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 998;
+}
+
+#floorplan-small li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	position: absolute;}
+	
+#floorplan-small a {display: block;}
+
+#floorplan-small1 {
+	left: 137px;
+	top: 48px;
+	width: 115px;
+	height: 91px;
+}
+#floorplan-small2 {
+	left: 23px;
+	top: 117px;
+	width: 127px;
+	height: 94px;
+}
+
+#floorplan-small1 a, #floorplan-small2 a {height: 90px}
+
+#floorplan-small1 a:hover,
+#floorplan-small1 a.active {background: url(../images/echelon/floorplan-map-small.jpg) -137px -294px no-repeat;}
+#floorplan-small2 a:hover,
+#floorplan-small2 a.active {background: url(../images/echelon/floorplan-map-small.jpg) -23px -363px no-repeat;}
+
+.seperator-floorplan{
+	height: 1px;
+	overflow: hidden;
+	border-top: 1px solid #CCC;
+	margin: 23px 0;
+}
+

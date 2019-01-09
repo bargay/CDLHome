@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+.sbHolder{ 
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 36px;
+	position: relative;
+	width: 248px;
+	background: url(../images/droplist-bg.png) repeat-x 0 0 ;
+	border-top: 1px solid #B6B6B6;
+	border-left: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+	border-bottom: 1px solid #B6B6B6;
+	
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px; 
+	outline: none;
+}
+.sbHolder:focus .sbSelector{
+	outline: none;
+}
+.sbSelector{
+	display: block;
+	height: 36px;
+	left: 0;
+	line-height: 36px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 170px;
+}
+/*
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #EBB52D;
+	outline: none;
+	text-decoration: none;
+}
+*/
+.sbToggle{
+	background: url(../images/droplist-toggle.png) 0 0 no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	right: 5px;
+	top: 5px;
+}  
+.sbOptions{
+	background-color: #FAFAFA;
+	border: solid 1px #515151;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 248px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{ 
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 7px 7px 7px;
+}
+.sbOptions a:link, .sbOptions a:visited{ 
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{ 
+	background: #999999;
+	color: white; 
+	outline: none;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

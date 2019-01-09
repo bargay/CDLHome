@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* =============================
+ * WEBSITE RESKIN STYLING for CN
+ * By: Convertium Pte Ltd [IIB]
+ * ============================= */
+
+a.cta {font-weight:normal;}
+#top-nav-bar .logo {width:144px; height:216px;}
+#top-nav-bar .txt {padding-top:28px;}
+.seq-caption > .caption {line-height:1.3; top:38px;}
+.seq-caption > .caption > .link {margin-top:4px; display:inline-block;}
+.table-special th {font-weight:normal; color:#fff;}
+.menu-dropdown {width:190px !important; left:0 !important;}
+.menu-dropdown li a {margin:0 15px !important;}
+.list-find-prop .item > h2, .list-find-prop .item > .c-txt {margin-top:-2px;}
+.labels-wrapper {top:2px;}
+
+/*** TYPEFACE ***/
+h1, h2, h3, #top-nav-bar .txt, #top-nav-bar .pull-right > ul > li > a, #top-header .header, .tab-header .span2 > span, .tinytabs ul.tabs-link, .horizontal-nav-container li a, .horizontal-nav-container .phone span, .showflat-address > div, .bottom-contact .hotline, #facilities-tabs .ui-tabs-nav a, .seq-title, .seq-caption > .label, .sold-out-sticky-nav > a, #sold-out-flyout > dt, .sold-out-content h1, .media-heading, h3, .seq-caption > .label, .table-special th, .bnr-img-capt .capt h2, .map-legend > h2, .horizontal-nav-container .phone label, #floorplan-tabs .ui-tabs-nav a span, .map-note > h2, .map-note-tabs > h2, .msg-maintenance h2, a.cta, .menu-dropdown > li > a, .menu-dropdown li.current a, .show-transit, .bnr-img-capt .capt h3, .showflat-address, #main-slider.lease .seq-caption > .caption > h2, .sequence-info-box .tel, .sequence-info-box .tel > strong {font-family:"Microsoft YaHei", "微软雅黑", SimHei, Helvetica, Arial, sans-serif !important;}
+.seq-title {font-weight:normal;}
+.seq-caption > .label {font-weight:600;}
+#homepage .page-title h1 {font-size:20px;}
+h3, #highlight2 {font-size:17px;}
+.table-special th {font-size:16px;}
+body, p, .seq-caption > .caption, a.cta {font-size:15px;}
+.span3 .img .title {font-size:13px;}

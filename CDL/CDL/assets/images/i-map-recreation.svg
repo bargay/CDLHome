@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="42px" viewBox="0 0 35.9 36" style="enable-background:new 0 0 35.9 36;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill:#fff;}
+		.st1{fill:#fd7125;}
+	</style>
+	<defs>
+		<filter id="dropshadow" height="125%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+			<feOffset dx="0" dy="3" result="offsetblur"/>
+			<feComponentTransfer>
+				<feFuncA type="linear" slope="0.5"/>
+			</feComponentTransfer>
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+	<g id="Layer_2">
+		<g>
+			<circle class="st0" cx="17.9" cy="18" r="17.5" filter="url(#dropshadow)"/>
+			<polygon class="st1" points="17.9,9.3 20.8,15 27.1,15.9 22.5,20.4 23.6,26.7 17.9,23.7 12.3,26.7 13.4,20.4 8.8,15.9 15.1,15"/>
+		</g>
+	</g>
+	<g id="_x31_00_icons"></g>
+</svg>

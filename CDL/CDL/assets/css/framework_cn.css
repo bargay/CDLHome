@@ -1,0 +1,10 @@
+.menu-dropdown {width: 102%!important; left: -1px!important;}
+.menu-dropdown li a {margin: 0!important;}
+#floorplan-tabs .ui-tabs-nav .ui-tabs-active a {padding-bottom: 15px; padding-top: 15px;}
+#Table_01 {line-height: 18px!important;}
+.info-link img,
+.info-link2 img{
+	vertical-align: middle;
+	padding-left: 3px;
+	padding-right: 8px;
+}

@@ -1,0 +1,637 @@
+#Table_01 {
+	position:absolute;
+	width:942px;
+	height:389px;
+}
+
+#mockup-new-01_ {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:8px;
+	height:183px;
+}
+
+#mockup-new-02_ {
+	position:absolute;
+	left:8px;
+	top:0px;
+	width:931px;
+	height:34px;
+	font-weight:;
+}
+
+.subHeaderTxt {
+   width:100%;
+   color: #545454;
+   font-size:14px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#mockup-new-03_ {
+	position:absolute;
+	left:939px;
+	top:0px;
+	width:3px;
+	height:389px;
+}
+
+#mockup-new-04_ {
+	position:absolute;
+	left:8px;
+	top:34px;
+	width:155px;
+	height:38px;
+}
+
+#mockup-new-05_ {
+	position:absolute;
+	left:163px;
+	top:34px;
+	width:382px;
+	height:38px;
+	background-image: url(../images/long-term-lease-bg.jpg);
+	
+}
+
+.longTermTxt {
+   width:300px;
+   margin-top:10px;
+   margin-left:127px;
+   text-transform: uppercase;
+   color: #6e4e10;
+   font-size:15px;
+   font-family: 'latobold';
+	src: url('../type/lato-bold-webfont.eot');
+	src: url('../type/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/lato-bold-webfont.woff') format('woff'), url('../type/lato-bold-webfont.ttf') format('truetype'), url('../type/lato-bold-webfont.svg#latobold') format('svg');
+	font-style: normal;
+}
+
+#mockup-new-06_ {
+	position:absolute;
+	left:545px;
+	top:34px;
+	width:1px;
+	height:38px;
+}
+
+#mockup-new-07_ {
+	position:absolute;
+	left:546px;
+	top:34px;
+	width:393px;
+	height:38px;
+	background-image: url(../images/short-term-lease-bg.jpg);
+}
+
+.shortTermTxt {
+   width:300px;
+   margin-top:10px;
+   margin-left:74px;
+   text-transform: uppercase;
+   color: #6e4e10;
+   font-size:15px;
+   font-family: 'latobold';
+	src: url('../type/lato-bold-webfont.eot');
+	src: url('../type/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/lato-bold-webfont.woff') format('woff'), url('../type/lato-bold-webfont.ttf') format('truetype'), url('../type/lato-bold-webfont.svg#latobold') format('svg');
+	font-style: normal;
+}
+
+#mockup-new-08_ {
+	position:absolute;
+	left:8px;
+	top:56px;
+	width:155px;
+	height:2px;
+}
+
+#mockup-new-09_ {
+	position:absolute;
+	left:163px;
+	top:56px;
+	width:776px;
+	height:2px;
+}
+
+#mockup-new-10_ {
+	position:absolute;
+	left:8px;
+	top:74px;
+	width:155px;
+	height:33px;
+	background-color: #ececec;
+}
+
+.unfurnishedTxt, .partiallyFurnishedTxt, .fullyFurnishedTxt {
+   width:137px;
+   margin-top:5px;
+   margin-left:10px;
+   color: #545454;
+   font-size:14px;
+   font-weight:bold;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.nonServicedTxt, .partiallyServicedTxt, .fullyServicedTxt {
+   width:137px;
+   margin-top:5px;
+   margin-left:15px;
+   color: #545454;
+   font-size:14px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#mockup-new-11_ {
+	position:absolute;
+	left:163px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-12_ {
+	position:absolute;
+	left:164px;
+	top:74px;
+	width:111px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-13_ {
+	position:absolute;
+	left:275px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-14_ {
+	position:absolute;
+	left:276px;
+	top:74px;
+	width:142px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-15_ {
+	position:absolute;
+	left:418px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-16_ {
+	position:absolute;
+	left:419px;
+	top:74px;
+	width:126px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-17_ {
+	position:absolute;
+	left:545px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-18_ {
+	position:absolute;
+	left:546px;
+	top:74px;
+	width:114px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-19_ {
+	position:absolute;
+	left:660px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-20_ {
+	position:absolute;
+	left:661px;
+	top:74px;
+	width:144px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-21_ {
+	position:absolute;
+	left:805px;
+	top:74px;
+	width:1px;
+	height:33px;
+}
+
+#mockup-new-22_ {
+	position:absolute;
+	left:806px;
+	top:74px;
+	width:133px;
+	height:33px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-23_ {
+	position:absolute;
+	left:8px;
+	top:90px;
+	width:155px;
+	height:1px;
+}
+
+#mockup-new-24_ {
+	position:absolute;
+	left:163px;
+	top:90px;
+	width:112px;
+	height:1px;
+}
+
+#mockup-new-25_ {
+	position:absolute;
+	left:275px;
+	top:90px;
+	width:143px;
+	height:1px;
+}
+
+#mockup-new-26_ {
+	position:absolute;
+	left:418px;
+	top:90px;
+	width:127px;
+	height:1px;
+}
+
+#mockup-new-27_ {
+	position:absolute;
+	left:545px;
+	top:90px;
+	width:116px;
+	height:1px;
+}
+
+#mockup-new-28_ {
+	position:absolute;
+	left:661px;
+	top:90px;
+	width:144px;
+	height:1px;
+}
+
+#mockup-new-29_ {
+	position:absolute;
+	left:805px;
+	top:90px;
+	width:134px;
+	height:1px;
+}
+
+#mockup-new-30_ {
+	position:absolute;
+	left:8px;
+	top:108px;
+	width:155px;
+	height:36px;
+	background-color: #ececec;
+}
+
+#mockup-new-31_ {
+	position:absolute;
+	left:163px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-32_ {
+	position:absolute;
+	left:164px;
+	top:108px;
+	width:111px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-33_ {
+	position:absolute;
+	left:275px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-34_ {
+	position:absolute;
+	left:276px;
+	top:108px;
+	width:142px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-35_ {
+	position:absolute;
+	left:418px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-36_ {
+	position:absolute;
+	left:419px;
+	top:108px;
+	width:126px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-37_ {
+	position:absolute;
+	left:545px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-38_ {
+	position:absolute;
+	left:546px;
+	top:108px;
+	width:114px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-39_ {
+	position:absolute;
+	left:660px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-40_ {
+	position:absolute;
+	left:661px;
+	top:108px;
+	width:144px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-41_ {
+	position:absolute;
+	left:805px;
+	top:108px;
+	width:1px;
+	height:37px;
+}
+
+#mockup-new-42_ {
+	position:absolute;
+	left:806px;
+	top:108px;
+	width:133px;
+	height:36px;
+	background-color: #f8f8f8;
+}
+
+#mockup-new-43_ {
+	position:absolute;
+	left:8px;
+	top:127px;
+	width:155px;
+	height:1px;
+}
+
+#mockup-new-44_ {
+	position:absolute;
+	left:164px;
+	top:127px;
+	width:111px;
+	height:1px;
+}
+
+#mockup-new-45_ {
+	position:absolute;
+	left:276px;
+	top:127px;
+	width:142px;
+	height:1px;
+}
+
+#mockup-new-46_ {
+	position:absolute;
+	left:419px;
+	top:127px;
+	width:126px;
+	height:1px;
+}
+
+#mockup-new-47_ {
+	position:absolute;
+	left:546px;
+	top:127px;
+	width:114px;
+	height:1px;
+}
+
+#mockup-new-48_ {
+	position:absolute;
+	left:661px;
+	top:127px;
+	width:144px;
+	height:1px;
+}
+
+#mockup-new-49_ {
+	position:absolute;
+	left:806px;
+	top:127px;
+	width:133px;
+	height:1px;
+}
+
+#mockup-new-50_ {
+	position:absolute;
+	left:8px;
+	top:145px;
+	width:155px;
+	height:38px;
+	background-color: #ececec;
+}
+
+#mockup-new-51_ {
+	position:absolute;
+	left:163px;
+	top:145px;
+	width:112px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-52_ {
+	position:absolute;
+	left:275px;
+	top:145px;
+	width:143px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-53_ {
+	position:absolute;
+	left:418px;
+	top:145px;
+	width:127px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-54_ {
+	position:absolute;
+	left:545px;
+	top:145px;
+	width:116px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-55_ {
+	position:absolute;
+	left:661px;
+	top:145px;
+	width:144px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-56_ {
+	position:absolute;
+	left:805px;
+	top:145px;
+	width:134px;
+	height:38px;
+	color: #545454;
+}
+
+#mockup-new-57_ {
+	position:absolute;
+	left:0px;
+	top:183px;
+	width:939px;
+	height:206px;
+}
+
+.noteContentTxt {
+   margin-top:20px;
+   margin-left:0;
+   width:100%;
+   color: #545454;
+   font-size:11px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.lists {
+   padding-top:7px;
+   width:4px;
+   height:4px;
+   float:left;
+   margin-left:10px;
+   margin-right:6px;
+}
+
+.listHeaderTxt {
+   margin-top:30px;
+   margin-left:10px;
+   width:100%;
+   color: #545454;
+   font-size:15px;
+   font-weight:bold;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.listContentTxt {
+   margin-left:10px;
+   width:100%;
+   color: #545454;
+   font-size:14px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   /*NEW STYLE*/
+   /*display: inline-block;    
+   margin-left: 20px;
+    margin-top: 3px;*/
+
+}
+
+.noteContentTxt2 {
+   margin-top:20px;
+   margin-left:10px;
+   width:100%;
+   color: #545454;
+   font-size:11px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.horizontal-nav-container .details li.selected.none {
+    /*background-position: 74px bottom !important;*/
+    background-position: center bottom !important;
+}
+
+
+.list-gold-bullet 
+{
+    list-style: none inside;
+    margin: 0 0 0 10px;}
+.list-gold-bullet li {
+  background: url(../images/bullet.jpg) center left no-repeat;
+  margin: 0;
+  padding: 0 0 0 10px}
+  
+  /* New Classes Added */
+.leasing {padding-left: 10px; padding-right: 10px;}
+table.leasing-table {margin: 20px 0 0; padding: 0; width: 100%;}
+.leasing-table th:first-child {background: #fff;}
+.leasing-table th {
+	background: url(../images/long-term-lease-bg.jpg) top left repeat-x;
+	text-transform: uppercase; 
+	color: #6e4e10; 
+	font-size: 15px; 
+	font-family: 'latobold';
+	src: url('../type/lato-bold-webfont.eot');
+	src: url('../type/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../type/lato-bold-webfont.woff') format('woff'), url('../type/lato-bold-webfont.ttf') format('truetype'), url('../type/lato-bold-webfont.svg#latobold') format('svg'); font-style: normal;
+	text-align: center;
+	height: 38px;
+	border-left: 1px solid #fff;
+	border-bottom: 2px solid #6e4e10;}
+	
+.leasing-table td:first-child {
+	background: #ececec;
+	border-left: 1px solid #fff; 
+	color: #545454;
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: left;}
+	
+.leasing-table td {
+	background: #f8f8f8;
+	font-size: 14px;
+	text-align: center;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 10px;}

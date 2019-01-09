@@ -1,0 +1,11 @@
+#find-prop .tinytabs ul.tabs-link li a {width:auto; padding:0 14px 0 42px;}
+.tab-header .span2 {width:75%;}
+#transit-wpr {width:15%;}
+#find-prop dl.select-prop-type2 {width:292px;}
+dl.select.big {width:194px;}
+.show-transit {width:206px;}
+.map-button-group a {width:208px;}
+#floorplan-tabs .ui-tabs-nav a {padding:10px 23px;}
+.header-bg i.left, .header-bg i.right {
+    width:15% !important;
+}
