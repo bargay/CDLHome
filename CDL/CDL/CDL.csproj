@@ -6403,6 +6403,7 @@
     <Content Include="Views\Partials\Banner.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Partials\ContacatFooter.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

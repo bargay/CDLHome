@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "bad36918855acb52")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "215f5261c239697b")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.9")]
 
 
 // FILE: models.generated.cs
@@ -867,6 +867,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string MenuTitle
 		{
 			get { return Umbraco.Web.PublishedContentModels.Menu.GetMenuTitle(this); }
+		}
+	}
+
+	/// <summary>International Countries</summary>
+	[PublishedContentModel("internationalCountries")]
+	public partial class InternationalCountries : Properties
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "internationalCountries";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public InternationalCountries(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<InternationalCountries, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

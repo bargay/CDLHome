@@ -1,0 +1,1042 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "CDlHome.cshtml";
+	var _content = Umbraco.Content(1055);
+}
+
+    <div id="page-wrapper">
+    <article class="container-fluid">
+    <!-- Highlights -->
+    <div class="new-tab-highlights sticky-highlights">
+    <div class="row">
+    <div class="col-xs-12">
+    <div id="new-tab-highlights">
+    <!-- To hide the tab, simply add class="hidden" OR style="display:none;visibility:hidden;" -->
+    <div class="new-tab-highlights-click">
+    <a id="modal-HL" data-toggle="modal" data-target="#modal-higlights"><h1>Highlights<span class="i-new-tab-highlights"></span></h1></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="modal-higlights" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade modal-higlights">
+    <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center">
+    <!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-header">
+    <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+    <h2 class="modal-title">Highlights</h2>
+    </div>
+    <div class="modal-body">
+    <div id="carousel-highlight" class="carousel slide" data-ride="carousel">
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <div class="highlights-content">
+            <a href="/whistlergrand">
+                <img src="/media/755033/CDLhomeshighlightbanner_v2.jpg" style="width:830px" class="hidden-xs">
+                <img src="/media/755013/Highlight-Banner-Mobile-600x500.jpg" style="width:300px" class="visible-xs">
+            </a>
+        </div>
+    </div>
+    
+    
+    <div class="item">
+        <div class="highlights-content">
+            <a href="/southbeachresidences/sbrhome.html">
+                <img src="/media/741724/SBR-Highlights-Banner-EN.jpg" class="hidden-xs">
+                <img src="/media/741739/SBR-Highlights-Mobile-EN.jpg" class="visible-xs">
+            </a>
+        </div>
+    </div>
+    
+    <div class="item">
+        <div class="highlights-content">
+            <a href="/thetapestry/index.html">
+                <img src="/media/702720/home_banner_v1.jpg" class="hidden-xs">
+                <img src="/media/708428/tapestry-mobile-banner.jpg" class="visible-xs">
+            </a>
+        </div>
+    </div>
+    
+    <!-- <div class="item">
+    <div class="highlights-content">
+    
+    </div>
+    </div> -->
+    
+    </div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    <li data-target="#carousel-highlight" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-highlight" data-slide-to="1"></li>
+    <li data-target="#carousel-highlight" data-slide-to="2"></li>
+    </ol>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- /Highlights -->
+    <div class="row">
+    <!-- Tabs Content for Tablets & Desktops -->
+    <div class="col-sm-12">
+    <section class="tabs-content tabs-home tabs-new">
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+    @foreach(var con in _content.Children)
+    {
+    int count = 0;
+    var active = "";
+    if(count < 1)
+    {
+     active = "active";
+      }
+      else{
+       active = "";
+      }
+     <li role="presentation" class="@active"><a role="tab" data-toggle="tab" aria-controls="tab-1" href="#tab-1">@con.Name</a></li>
+    }
+   
+    </ul>
+    <!-- Tab Panes -->
+    <div class="tab-content">
+    <!-- Tab #1 -->
+    <div role="tabpanel" class="tab-pane tabs-home-sale active" id="tab-1">
+    <div class="home-sale">
+    <div class="property-list">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="property-header-txt">
+                <h2>Property Categories</h2>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-push-1">
+            <div class="checkboxList" id="checkboxList">
+                <div class="checkbox checkboxhome checkbox-primary">
+                    <input id="ultraLuxury" type="checkbox" name="propertyCategory" value="ultraLuxury" />
+                    <label for="ultraLuxury">Ultra Luxury</label>
+                </div>
+                <div class="checkbox checkboxhome checkbox-primary">
+                    <input id="luxury" type="checkbox" name="propertyCategory" value="luxury" />
+                    <label for="luxury">Luxury</label>
+                </div>
+                <div class="checkbox checkboxhome checkbox-primary">
+                    <input id="affordableLuxury" type="checkbox" name="propertyCategory" value="affordableLuxury" />
+                    <label for="affordableLuxury">Affordable Luxury</label>
+                </div>
+                <div class="checkbox checkboxhome checkbox-primary">
+                    <input id="luxuryExecutive" type="checkbox" name="propertyCategory" value="luxuryExecutive" />
+                    <label for="luxuryExecutive">Luxury Executive Condominium</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row match-height-2">
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/Southbeachresidences/sbrhome.html">
+                            <img src="/media/741088/SBR-Thumbnail.jpg">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h3>South Beach Residences</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Beach Road (District 7)</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="/Southbeachresidences/sbrhome.html" target="cdl">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/newfutura/overview.html">
+                            <img src="/media/706316/NewFutura-thumbnail.jpg">
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>New Futura</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Leonie Hill Road (District 9)</li>
+                            <li>Freehold</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="/newfutura/overview.html" target="cdl">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/nouvel18/overview.html">
+                            <img src="/media/6816/nouvel-18.jpg">
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>Nouvel 18</h3>
+                        <div class="for-lease">
+                            <div class="for-lease-box">
+                                FOR LEASE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Ardmore Park/Anderson Road (District 10)</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="/nouvel18/overview.html" target="cdl">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/wresidences/">
+                            <img src="/media/543509/the_residences_at_w_singapore_thumbnail.jpg" />
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>The Residences at W Singapore Sentosa Cove</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="for-lease">
+                            <div class="for-lease-box">
+                                FOR LEASE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Sentosa Cove (District 4)</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="/wresidences/">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/clivedenatgrange/">
+                            <img src="/media/107818/cliveden.jpg" />
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>Cliveden at Grange</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="for-lease">
+                            <div class="for-lease-box">
+                                FOR LEASE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Grange Road (District 10)</li>
+                            <li>Freehold</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="/clivedenatgrange/">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="/oneshenton/">
+                            <img src="/media/107891/one-shenton.jpg" />
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>One Shenton</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="for-lease">
+                            <div class="for-lease-box">
+                                FOR LEASE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Shenton Way (District 1)</li>
+                        </ul>
+                        <p><a class="link-virtual-tour lightbox-virtual-tour" data-iframe="true" data-src="/misc/one-shenton/one-shenton/index.html">Take a 360° virtual tour</a></p>                                                                <p class="detail-link">
+                            <a class="link" href="/oneshenton/">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="ultraLuxury">
+            <div class="home-sale-item property-item match-element">
+                <h2>Ultra Luxury</h2>
+                <div class="home-sale-container">
+                    <div class="img">
+                        <a href="http://www.cdl.com.sg/srr/">
+                            <img src="/media/108037/st_regis_residences_singapo.jpg">
+                        </a>
+                        <div class="title">Immediate occupation</div>
+                    </div>
+                    <div class="caption">
+                        <h3>St. Regis Residences, Singapore</h3>
+                        <div class="for-sale">
+                            <div class="for-sale-box">
+                                FOR SALE
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="for-lease">
+                            <div class="for-lease-box">
+                                FOR LEASE
+                            </div>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>Tanglin Road (District 10)</li>
+                            <li>999-year lease</li>
+                        </ul>
+                        <p class="detail-link">
+                            <a class="link" href="http://www.cdl.com.sg/srr/" target="cdl">More details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ShowMoreBtn hidden-sm visible-xs">
+            <button class="btn btn-primary">Show more</button>
+        </div>
+        <div class="mobileShowMore">
+    
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="luxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Luxury </h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/forestwoods/overview.html">
+                                <img src="/media/620707/forestwood_280x165.jpg">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h3>Forest Woods</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$1.68M</span>
+                            </div>
+                            <ul>
+                                <li>Lorong Lew Lian (District 19)</li>
+                            </ul>
+                            <p><a class="link-virtual-tour lightbox-virtual-tour" data-iframe="true" data-src="/misc/forestwoods/forestwoods/index.html">Take a 360° virtual tour</a></p>                                                                    <p class="detail-link">
+                                <a class="link" href="/forestwoods/overview.html" target="cdl">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="luxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Luxury </h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/the-venue-residences-and-shoppes/">
+                                <img src="/media/143781/TheVenue-2.jpg" />
+                            </a>
+                            <div class="title">Immediate occupation</div>
+                        </div>
+                        <div class="caption">
+                            <h3>The Venue Residences and Shoppes</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span></span>
+                            </div>
+                            <ul>
+                                <li>Potong Pasir (District 13)</li>
+                            </ul>
+                            <p class="detail-link">
+                                <a class="link" href="/the-venue-residences-and-shoppes/">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="luxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Luxury </h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/echelon/">
+                                <img src="/media/108110/echelon.jpg" />
+                            </a>
+                            <div class="title">Immediate occupation</div>
+                        </div>
+                        <div class="caption">
+                            <h3>Echelon</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$7.72M</span>
+                            </div>
+                            <ul>
+                                <li>Alexandra Road (District 3)</li>
+                            </ul>
+                            <p class="detail-link">
+                                <a class="link" href="/echelon/">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="luxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Luxury </h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/up/">
+                                <img src="/media/108183/up-robertson-quay.jpg" />
+                            </a>
+                            <div class="title">Immediate occupation</div>
+                        </div>
+                        <div class="caption">
+                            <h3><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0e5e0f0e2dfd2d5c2c4c3dfde">[email&#160;protected]</a> Quay</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$1.71M</span>
+                            </div>
+                            <div class="for-lease">
+                                <div class="for-lease-box">
+                                    FOR LEASE
+                                </div>
+                                <span></span>
+                            </div>
+                            <ul>
+                                <li>Robertson Quay (District 9)</li>
+                            </ul>
+                            <p class="detail-link">
+                                <a class="link" href="/up/">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="affordableLuxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Affordable Luxury</h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/whistlergrand">
+                                <img src="/media/755023/Thumbnail-Find-Properties-280x165_v3.jpg">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h3>Whistler Grand</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$675K</span>
+                            </div>
+                            <ul>
+                                <li>West Coast Vale (District 5)</li>
+                            </ul>
+                            <p class="detail-link">
+                                <a class="link" href="/whistlergrand" target="cdl">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="affordableLuxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Affordable Luxury</h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/thetapestry/overview.html">
+                                <img src="/media/708729/Tapstry-thumbnail.jpg">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h3>The Tapestry</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$618K</span>
+                            </div>
+                            <ul>
+                                <li>Tampines Ave 10 (District 18)</li>
+                                <ul>
+                                    <li>Attractively priced from S$618,030 for selected 1-Bedroom unit. Subject to availability.</li>
+                                </ul>
+                            </ul>
+                            <p class="detail-link">
+                                <a class="link" href="/thetapestry/overview.html" target="cdl">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 property-item-wrapper" data-propertyCategory="affordableLuxury">
+                <div class="home-sale-item property-item match-element">
+                    <h2>Affordable Luxury</h2>
+                    <div class="home-sale-container">
+                        <div class="img">
+                            <a href="/coco-palms/">
+                                <img src="/media/242248/coco-palms_280x165.jpg" />
+                            </a>
+                            <div class="title">Immediate occupation</div>
+                        </div>
+                        <div class="caption">
+                            <h3>Coco Palms</h3>
+                            <div class="for-sale">
+                                <div class="for-sale-box">
+                                    FOR SALE
+                                </div>
+                                <span>Available from S$1.64M</span>
+                            </div>
+                            <ul>
+                                <li>Pasir Ris Grove (District 18)</li>
+                            </ul>
+                            <p><a class="link-virtual-tour lightbox-virtual-tour" data-iframe="true" data-src="/misc/cocopalms/index.html">Take a 360° virtual tour</a></p>                                                                    <p class="detail-link">
+                                <a class="link" href="/coco-palms/">More details</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </div>
+    </div>
+    </div><!--Tab #2-->
+    <div role="tabpanel" class="tab-pane tabs-home-sale" id="tab-2">
+    <div class="match-height ">
+    <div>
+    <div class="international-header-txt">
+        <h2>Australia</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="international-properties-gp">
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='/ivy-and-eve/overview.html'><img src='/media/560269/ivy-and-eve.jpg' /></a>
+                                <div class="title sell-fast">Selling fast</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Ivy and Eve</h2>
+                                <p>Brisbane</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: 22-28 Merivale Street, South Brisbane, QLD</li>
+                                            <li>Tenure: Freehold</li>
+                                            <li>Total Units: 472</li>
+                                            <li>Expected Completion: 1H 2018</li>
+                                        </ul>
+                                        <p><a href="/media/619959/Ivy-Flip-Book.pdf" target="_blank" class="link-pdf">Ivy Brochure</a> <a href="/media/619953/EVE_MerivaleStreet_Flipbook.pdf" target="_blank" class="link-pdf">Eve Brochure</a></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="link"><a class="link" href="/ivy-and-eve/overview.html" p-nameEN="Ivy And Eve" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Ivy and Eve' data-src="/residential/buying-a-property/contacts-web-form?propertyName=IAE_Ivy and Eve|6399"><span class="__cf_email__" data-cfemail="88e9fda5ede6f9fde1fae1edfbc8ebece4a6ebe7e5a6fbef">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class="international-header-txt">
+        <h2>China</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="international-properties-gp">
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='http://www.cdlchina.com/app/cdl-china/en/projects/shanghai/hongqiao_royal_lake.xml'><img src='/media/560259/hongqiao-royal-lake.jpg' /></a>
+                                <div class="title">Immediate occupation</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Hongqiao Royal Lake</h2>
+                                <p>Shanghai</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Qingpu District, Lane 2558, Hu Qing Ping Road</li>
+                                            <li>Tenure: 70-year lease</li>
+                                            <li>Total Units: 85</li>
+                                            <li>Expected Completion: Completed</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Tel: +86 (21) 3987 5588</p>
+                                        <p>Sales Gallery: Lane 2558, Hu Qing Ping Road, Shanghai Qingpu District</p>                                                                                                <p class="link"><a class="link" href="http://www.cdlchina.com/app/cdl-china/en/projects/shanghai/hongqiao_royal_lake.xml" p-nameEN="Hongqiao Royal Lake" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Hongqiao Royal Lake' data-src="/residential/buying-a-property/contacts-web-form?propertyName=HRL_Hongqiao Royal Lake|6449"><span class="__cf_email__" data-cfemail="573439243f7a323926223e253e32241734333b7934383a792430">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='http://www.cdlchina.com/app/cdl-china/en/projects/chongqing/elinghill.xml'><img src='/media/560249/eling-residences.jpg' /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Eling Palace</h2>
+                                <p>Chongqing</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Eling Hill, Yuzhong District</li>
+                                            <li>Tenure: Residential - 50 years</li>
+                                            <li>Total Units: 126</li>
+                                            <li>Expected Completion: Completed</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Tel: +86 (23) 8813 1888</p>
+                                        <p>Sales Gallery: No.58, 59 Eling Main Street, Yuzhong District, Chongqing, China</p>                                                                                                <p class="link"><a class="link" href="http://www.cdlchina.com/app/cdl-china/en/projects/chongqing/elinghill.xml" p-nameEN="Eling Residences" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Eling Palace' data-src="/residential/buying-a-property/contacts-web-form?propertyName=ELR_Eling Palace|6450"><span class="__cf_email__" data-cfemail="06656865772b636877736f746f63754665626a2865696b287561">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='http://www.cdlchina.com/app/cdl-china/en/projects/chongqing/huanghuayuan.xml'><img src='/media/560264/huang-huayuan.jpg' /></a>
+                                <div class="title unveil-soon">Unveiling soon</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Huang Huayuan</h2>
+                                <p>Chongqing</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: <span>Huang Huayuan, Yuzhong District</span></li>
+                                            <li>Tenure: Residential - 50 years</li>
+                                            <li>Total Units: <span>TBC</span></li>
+                                            <li>Expected Completion: <span>TBC</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="link"><a class="link" href="http://www.cdlchina.com/app/cdl-china/en/projects/chongqing/huanghuayuan.xml" p-nameEN="Huang Huayuan" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Huang Huayuan' data-src="/residential/buying-a-property/contacts-web-form?propertyName=HHY_Huang Huayuan|6451"><span class="__cf_email__" data-cfemail="d0b3beb3a1fdb5bea1a5b9a2b9b5a390b3b4bcfeb3bfbdfea3b7">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='http://www.cdlchina.com/app/cdl-china/en/projects/suzhou/hong_leong_city_center.xml'><img src='/media/560289/hong-leong-city-centre.jpg' /></a>
+                                <div class="title sell-fast">Selling fast</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Hong Leong City Center (Phase 1)</h2>
+                                <p>Suzhou</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: <span>Jinji Lake, Suzhou Industrial Park District</span></li>
+                                            <li>Tenure: <span>Residential - 70 years / Commercial - 40 years</span></li>
+                                            <li>Total Units: <span>1,374</span></li>
+                                            <li>Expected Completion: Completed</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Tel: +86 (512) 6716 6666</p>
+                                        <p>Sales Gallery: Si An Street East, Suzhou Industrial Park (North side of Genway International Hotel)</p>                                                                                                <p class="link"><a class="link" href="http://www.cdlchina.com/app/cdl-china/en/projects/suzhou/hong_leong_city_center.xml" p-nameEN="Hong Leong City Center (Phase 1)" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Hong Leong City Center (Phase 1)' data-src="/residential/buying-a-property/contacts-web-form?propertyName=HCC_Hong Leong City Center (Phase 1)|6452"><span class="__cf_email__" data-cfemail="1d7e736e673078736c68746f74786e5d7e7971337e7270336e7a">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='http://www.cdlchina.com/app/cdl-china/en/projects/suzhou/hong_leong_city_center.xml'><img src='/media/560294/hong-leong-city-centre-phase-2.jpg' /></a>
+                                <div class="title sell-fast">Selling fast</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Hong Leong City Center (Phase 2)</h2>
+                                <p>Suzhou</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Jinji Lake, Suzhou Industrial Park District</li>
+                                            <li>Tenure: Residential - 70 years / Commercial - 40 years</li>
+                                            <li>Total Units: 430</li>
+                                            <li>Expected Completion: Q2 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Tel: +86 (512) 6716 6666</p>
+                                        <p>Sales Gallery: Si An Street East, Suzhou Industrial Park (North side of Genway International Hotel)</p>                                                                                                <p class="link"><a class="link" href="http://www.cdlchina.com/app/cdl-china/en/projects/suzhou/hong_leong_city_center.xml" p-nameEN="Hong Leong City Center (Phase 2)" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Hong Leong City Center (Phase 2)' data-src="/residential/buying-a-property/contacts-web-form?propertyName=HCC_Hong Leong City Center (Phase 2)|6453"><span class="__cf_email__" data-cfemail="9dfef3eee7b0f8f3ece8f4eff4f8eeddfef9f1b3fef2f0b3eefa">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class="international-header-txt">
+        <h2>Japan</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="international-properties-gp">
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560309/shirokane.jpg' /></a>
+                                <div class="title unveil-soon">Unveiling soon</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Shirokane</h2>
+                                <p>Tokyo</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Shirokane</li>
+                                            <li>Tenure: Freehold</li>
+                                            <li>Total Units: TBC</li>
+                                            <li>Expected Completion: TBC</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Shirokane' data-src="/residential/buying-a-property/contacts-web-form?propertyName=SRK_Shirokane|6454"><span class="__cf_email__" data-cfemail="482238652d26393d213a212d3b082b2c24662b2725663b2f">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class="international-header-txt">
+        <h2>United Kingdom</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="international-properties-gp">
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560279/belgravia.jpg' /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Belgravia</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: 31-35 Chesham Street, Belgravia</li>
+                                            <li>Tenure: <span>999 years with a share of the freehold</span></li>
+                                            <li>Total Units: 6</li>
+                                            <li>Expected Completion: Q2 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Belgravia' data-src="/residential/buying-a-property/contacts-web-form?propertyName=BGV_Belgravia|6456"><span class="__cf_email__" data-cfemail="1c69773179726d69756e75796f5c7f7870327f7371326f7b">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560299/knightsbridge-hans-road.jpg' /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Knightsbridge </h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: 32 Hans Road, Knightsbridge</li>
+                                            <li>Tenure: <span>999 years with a share of the freehold</span></li>
+                                            <li>Total Units: 3</li>
+                                            <li>Expected Completion: Q2 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Knightsbridge ' data-src="/residential/buying-a-property/contacts-web-form?propertyName=KHR_Knightsbridge |6457"><span class="__cf_email__" data-cfemail="186d73357d76696d716a717d6b587b7c74367b7775366b7f">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560284/chelsea.jpg' /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Chelsea</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: 90-100 Sydney Street, Chelsea</li>
+                                            <li>Tenure: <span>999 years with a share of the freehold</span></li>
+                                            <li>Total Units: 9</li>
+                                            <li>Expected Completion: Q3 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Chelsea' data-src="/residential/buying-a-property/contacts-web-form?propertyName=CHE_Chelsea|6458"><span class="__cf_email__" data-cfemail="15607e38707b64607c677c7066557671793b767a783b6672">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href='/teddington/overview.html'><img src='/media/560274/teddington-riverside.jpg' /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Teddington Riverside</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Broom Road, Teddington</li>
+                                            <li>Tenure: <span>999 years with a share of the freehold</span></li>
+                                            <li><span>Total Units: 225</span></li>
+                                            <li>Expected Completion: 2018 / 2019</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="link"><a class="link" href="/teddington/overview.html" p-nameEN="Teddington Riverside" target="_blank">More Details</a></p>
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Teddington Riverside' data-src="/residential/buying-a-property/contacts-web-form?propertyName=TRS_Teddington Riverside|6459"><span class="__cf_email__" data-cfemail="99ecf2edfcfdb4fcf7e8ecf0ebf0fcead9fafdf5b7faf6f4b7eafe">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560304/knightsbridge-pavilion.jpg' /></a>
+                                <div class="title unveil-soon">Unveiling soon</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Knightsbridge (Pavilion Road)</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: 28 Pavilion Road, Knightsbridge</li>
+                                            <li>Tenure: Long lease</li>
+                                            <li>Total Units: TBC</li>
+                                            <li>Expected Completion: TBC</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Knightsbridge (Pavilion Road)' data-src="/residential/buying-a-property/contacts-web-form?propertyName=KPR_Knightsbridge (Pavilion Road)|6460"><span class="__cf_email__" data-cfemail="04716f29616a75716d766d6177446760682a676b692a7763">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/560314/stag-brewery.jpg' /></a>
+                                <div class="title unveil-soon">Unveiling soon</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Stag Brewery</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: Mortlake</li>
+                                            <li>Tenure: L<span>ong lease</span></li>
+                                            <li>Total Units: TBC</li>
+                                            <li>Expected Completion: TBC</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Stag Brewery' data-src="/residential/buying-a-property/contacts-web-form?propertyName=STB_Stag Brewery|6461"><span class="__cf_email__" data-cfemail="0e7b65236b607f7b677c676b7d4e6d6a62206d6163207d69">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="international-property">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="img">
+                                <a target="cdl" href=''><img src='/media/659215/Ransomes-Wharf.jpg' /></a>
+                                <div class="title unveil-soon">Unveiling soon</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="international-property-txt">
+                                <h2>Ransome&#39;s Wharf</h2>
+                                <p>London</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list">
+                                            <li>Location: South Bank of the River Thames close to Albert Bridge</li>
+                                            <li>Tenure: L<span>ong lease</span></li>
+                                            <li>Total Units: 118 apartments including 24 affordable houses, eight commercial units and 103 underground car parking spaces</li>
+                                            <li>Expected Completion: TBC</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><a class="lightbox-generic" data-iframe="true" p-name='Ransome&#39;s Wharf' data-src="/residential/buying-a-property/contacts-web-form?propertyName=RSW_Ransome&#39;s Wharf|6956"><span class="__cf_email__" data-cfemail="add8c680c8c3dcd8c4dfc4c8deedcec9c183cec2c083deca">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div><!--End Tab #2-->
+    </div>
+    </section>
+    </div><!--#end of Tabs Content for Tablets & Desktops -->
+    </div>
+    </article>
+    </div><!--#end of Page Content -->
